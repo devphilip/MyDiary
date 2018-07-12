@@ -33,3 +33,84 @@ fieldset {
   margin: 5px;
   border-radius: 5px;
 }
+
+/* home styles */
+
+.wrapper { 
+  height: 60px; 
+  background-color: #c3f;
+}
+.wrap {
+  position: relative; 
+  width: 80%; 
+  max-width: 1000px; 
+  margin: 0 auto; 
+}
+
+.wrapper ul {
+  margin: 0; 
+  padding: 0; 
+  list-style: none;
+}
+.wrapper li {
+  float: left;
+  margin: 14px 5px 0 0;
+}
+.wrapper a {
+  text-decoration: none;
+  padding: 0px 10px;
+  display: block;
+  letter-spacing: 1px;
+  line-height: 2;
+  border-radius: 4px;
+}
+
+.wrapper li a:hover {
+  background: rgba(0,0,0,.1);    
+  border: 1px solid #31705a;
+}
+
+.user-menu { float: right; }
+.user-menu li { margin-left: 10px; }
+.user-menu .signup a { 
+  background: #f4e89a;
+  color: #4c4242; 
+  text-shadow: 0 1px 1px #fff; 
+  font-weight: 400; 
+  box-shadow: 1px 1px 3px rgba(0,0,0,.3)
+}
+.user-menu .buy-now a:hover { 
+  background: #d1c78a; 
+  border: 1px solid #d1c78a; 
+}
+.wrapp { 
+  min-height: 500px; 
+}
+.wrapp ul { 
+  list-style: none;
+}
+.wrapp ul li { 
+  line-height: 2;
+  background-color: #a78dda;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* detail page */
+
+#imgDiv {
+  width: 30px;
+  margin: 0 300px 0 0;
+  float: left;
+}
+
+#content {
+  width: 600px;
+  margin: 0 0 0 250px;
+}
+
+#btnDiv button {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
