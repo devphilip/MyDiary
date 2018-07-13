@@ -34,6 +34,27 @@ fieldset {
   border-radius: 5px;
 }
 
+/* index page */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 48px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+
 /* home styles */
 
 .wrapper { 
