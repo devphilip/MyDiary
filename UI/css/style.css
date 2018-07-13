@@ -114,3 +114,10 @@ fieldset {
   padding: 10px;
   font-size: 18px;
 }
+
+/* entries page */
+#entry input, textarea, button {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
