@@ -121,3 +121,9 @@ fieldset {
   padding: 5px;
   margin: 5px;
 }
+
+/* edit page */
+#editText {
+  width: 800px;
+  height: 400px;;
+}
