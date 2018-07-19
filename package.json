@@ -1,0 +1,26 @@
+{
+  "name": "my-diary",
+  "version": "1.0.0",
+  "description": "my-diary app",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devphilip/MyDiary.git"
+  },
+  "author": "Philip Akpeki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devphilip/MyDiary/issues"
+  },
+  "homepage": "https://github.com/devphilip/MyDiary#readme",
+  "devDependencies": {
+    "chai": "^4.1.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
