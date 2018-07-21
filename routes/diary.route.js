@@ -4,8 +4,8 @@ module.exports = (app) => {
   // Retrieve all Diary
   app.get("/api/v1/diary", diaryCtrl.readAll);
 
-  // // Retrieve a single Diary with diaryId
-  // app.get("/api/v1/diary/:id", diaryCtrl.readOne);
+  // Retrieve a single Diary with diaryId
+  app.get("/api/v1/diary/:id", diaryCtrl.readOne);
 
   // // Create a new Diary
   // app.post("/api/v1/diary", diaryCtrl.create);
@@ -15,4 +15,4 @@ module.exports = (app) => {
 
   // // Delete a Diary with diaryId
   // app.delete("/api/v1/diary/:id", diaryCtrl.delete);
-};
+}
