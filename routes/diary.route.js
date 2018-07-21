@@ -10,8 +10,8 @@ module.exports = (app) => {
   // Create a new Diary
   app.post("/api/v1/diary", diaryCtrl.create);
 
-  // // Update a Diary with diaryId
-  // app.put("/api/v1/diary/:id", diaryCtrl.update);
+  // Update a Diary with diaryId
+  app.put("/api/v1/diary/:id", diaryCtrl.update);
 
   // // Delete a Diary with diaryId
   // app.delete("/api/v1/diary/:id", diaryCtrl.delete);

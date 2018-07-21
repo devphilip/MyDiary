@@ -24,3 +24,16 @@ exports.create = (req, res) => {
   myDiary.push(diary);
   res.send(diary);
 };
+
+exports.update = (req, res) => {
+
+  const myDiaryId = myDiary.find(d => d.id === parseInt(req.params.id));
+
+  if (!myDiaryId) {
+      return res.status(404).send("The Diary entry with the given ID was not found.")
+  };
+
+  myDiaryId.title = req.body.title;
+  myDiaryId.content = req.body.content;
+  res.send(myDiaryId);
+};
