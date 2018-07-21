@@ -10,3 +10,17 @@ exports.readOne = (req, res) => {
   res.send(myDiaryId);
 }
 
+exports.create = (req, res) => {
+	if (req.body == {}) {
+    return res.status(400).send("The Diary entry cannot be empty.");
+	}
+
+  const diary = {
+    id: myDiary.length + 1,
+      title: req.body.title, 
+      content: req.body.content
+  };
+
+  myDiary.push(diary);
+  res.send(diary);
+};

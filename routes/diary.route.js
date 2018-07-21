@@ -7,8 +7,8 @@ module.exports = (app) => {
   // Retrieve a single Diary with diaryId
   app.get("/api/v1/diary/:id", diaryCtrl.readOne);
 
-  // // Create a new Diary
-  // app.post("/api/v1/diary", diaryCtrl.create);
+  // Create a new Diary
+  app.post("/api/v1/diary", diaryCtrl.create);
 
   // // Update a Diary with diaryId
   // app.put("/api/v1/diary/:id", diaryCtrl.update);
