@@ -1,4 +1,4 @@
-const assert = require("chai").assert;
+const chai = require("chai").assert;
 const app = require("../controllers/diary.controller");
 const data = require("../model/diary.data");
 // const chaiHttp = require('chai-http');
