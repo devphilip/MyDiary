@@ -37,3 +37,16 @@ exports.update = (req, res) => {
   myDiaryId.content = req.body.content;
   res.send(myDiaryId);
 };
+
+exports.delete = (req, res) => {
+  const myDiaryId = myDiary.find(d => d.id === parseInt(req.params.id));
+
+  if (!myDiaryId) {
+      return res.status(404).send("The Diary entry with the given ID was not found.")
+  };
+
+  const index = myDiary.indexOf(myDiaryId);
+    myDiary.splice(index, 1);
+
+  res.send(myDiaryId);
+};

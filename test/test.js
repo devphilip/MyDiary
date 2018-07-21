@@ -2,7 +2,8 @@ const assert = require("chai").assert;
 const app = require("../controllers/diary.controller");
 const data = require("../model/diary.data");
 // const chaiHttp = require('chai-http');
-const should = assert.should;
+const assert = chai.assert;
+const should = chai.should;
 
 describe("diary.controller", () =>{
   describe("readAll", () =>{

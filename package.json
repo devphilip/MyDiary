@@ -4,7 +4,8 @@
   "description": "my-diary app",
   "main": "app.js",
   "scripts": {
-    "test": "mocha || true"
+    "test": "mocha || true",
+    "cover": "istanbul cover _mocha"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,8 @@
   "homepage": "https://github.com/devphilip/MyDiary#readme",
   "devDependencies": {
     "chai": "^4.1.2",
-    "chai-http": "^4.0.0"
+    "chai-http": "^4.0.0",
+    "istanbul": "^0.4.5"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
