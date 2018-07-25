@@ -27,4 +27,20 @@ describe('App', () => {
         done();
       });
   });
+
+  it('it should test for POST request', (done) => {
+    let entry = {
+        id: 33,
+        title: "the 33 title",
+        content: "the content of the 33 entry"
+    }
+    chai.request(app)
+      .post('/api/v1/entries')
+      .send(entry)
+      .end((err, res) => {
+          res.should.have.status(200);
+          res.body.should.be.a('object');
+        done();
+      });
+  });
 });

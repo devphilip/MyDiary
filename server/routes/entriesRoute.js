@@ -12,4 +12,9 @@ router.get('/entries/:id', (req, res) =>{
   entriesCtrl.getOneEntry(req,res);
 });
 
+// Add a new Entry
+router.post('/entries', (req, res) => {
+  entriesCtrl.createEntry(req, res);
+});
+
 export default router;
