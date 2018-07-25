@@ -18,4 +18,13 @@ describe('App', () => {
         done();
       });
   });
+  it('testing the request for getOneEntry', (done) => {
+    chai.request(app)
+      .get('/api/v1/entries/:id')
+      .end((err, res) => {
+        res.should.have.status(200);
+        res.body.should.be.a('object');
+        done();
+      });
+  });
 });
