@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8" />
+	<title>My Diary</title>
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <header>
-    <nav>
 
-    </nav>
-  </header>
-  <section>
-    <h1 class="pageHead">New User Signup Here</h1>
-    <form action="main.html" method="get">
-    <form action="main.html" method="post">
-      <fieldset>
-        <label for="name" class="label">Name</label>
-        <input type="text" name="name" id="name" class="bright">
-        <br>
-        <label for="email" class="label">Email</label>
-        <input type="email" name="email" id="email" class="bright">
-        <br>
-        <label for="password" class="label">Password</label>
-        <input type="password" name="password" id="password" class="bright">
-        <br>
-        <label for="password" class="label">Retype your Password</label>
-        <input type="password" name="password" id="password" class="bright">
-        <br>
-        <input type="submit" value="Signup" class="submit">
-        
-      </fieldset>
-    </form>
-  </section>
-  
-  <script src="js/script.js"></script>
+	<div class="container signup">
+		<form action="entries.html">
+			<h1>Sign up</h1>
+			<hr>
+			<label>
+				<h2>Your Name:</h2>
+				<input type="text" class="long" required>
+			</label>
+			<label>
+				<h2>Your email:</h2>
+				<input type="text" class="long" required>
+			</label>
+
+			<label>
+				<h2>Choose your password</h2>
+				<input type="password" class="long" required>
+			</label>
+
+			<label>
+				<h2>Repeat your password</h2>
+				<input type="password" class="long" required>
+			</label>
+
+			<button class="button-submit">Sign Up</button>
+		</form>
+	</div>
+	
 </body>
 </html>

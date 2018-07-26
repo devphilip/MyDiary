@@ -11,7 +11,7 @@
 
 <body>
 	<header class="blank">
-		<nav class="nav">
+		<nav>
 			<ul>
 				<li>
 					<a href="#" class="focus nav-home">
@@ -33,16 +33,38 @@
 			<br class="clear">
 		</nav>
 	</header>
-
 	
-	<section class="container blank">
-			
+	<div class="container signup">
 		
-	</section>
+		<form action="entries.html">
+			<a href="entries.html" class="button righty">View Entries</a>
+			<h1>Add new entry</h1>
+			<hr>
+			
+			<label>
+				<h2>Title:</h2>
+				<input type="text" class="long" required>
+			</label>
+			<label>
+				<h2>Category:</h2>
+				<input type="text" class="long" required>
+			</label>
+
+			<label>
+				<h2>Image Upload</h2>
+				<input type="file" class="long" required>
+			</label>
+
+			<label>
+				<h2>Content</h2>
+				<textarea required>
+					
+				</textarea>
+			</label>
+
+			<button class="button-submit">Add Entry</button>
+		</form>
+	</div>
 	
-</body>
-</html>
-  
-  
 </body>
 </html>
