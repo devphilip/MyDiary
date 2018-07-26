@@ -17,4 +17,9 @@ router.post('/entries', (req, res) => {
   entriesCtrl.createEntry(req, res);
 });
 
+// Update a Diary by id
+router.put('/entries/:id', (req, res) => {
+  entriesCtrl.update(req, res);
+});
+
 export default router;

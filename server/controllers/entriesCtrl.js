@@ -27,4 +27,17 @@ entriesCtrl.createEntry = (req, res) => {
   res.send(entry);
 };
 
+entriesCtrl.update = (req, res) => {
+
+  const entryId = entriesDB.find(e => e.id === parseInt(req.params.id));
+
+  if (!entryId) {
+      return res.status(404).send("The Diary entry with the given ID was not found.")
+  };
+
+  entryId.title = req.body.title;
+  entryId.content = req.body.content;
+  res.send(entryId);
+};
+
 export default entriesCtrl;

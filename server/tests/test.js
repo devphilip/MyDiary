@@ -1,6 +1,7 @@
 import chai from 'chai';
 import chaiHttp from 'chai-http';
 import app from '../app';
+import data from '../models/entriesDB';
 
 chai.use(chaiHttp)
 
@@ -43,4 +44,22 @@ describe('App', () => {
         done();
       });
   });
+
+  it('it should UPDATE an entry given the id', (done) => {
+    let entry = {
+      id: 23,
+      title: "the 23 title",
+      content: "the content of the 23 entry on the page"
+    }
+    
+          // chai.request(app)
+          // .put('/entries/' + data[2].id)
+          // .send(entry)
+          // .end((err, res) => {
+          //     res.should.have.status(200);
+          //     res.body.should.be.a('object');
+          //     res.body.book.should.have.property('content').eql(entry.content);
+          //   done();
+          // });
+    });
 });
