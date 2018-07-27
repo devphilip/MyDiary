@@ -17,9 +17,14 @@ router.post('/entries', (req, res) => {
   entriesCtrl.createEntry(req, res);
 });
 
-// Update a Diary by id
+// Update an Entry by id
 router.put('/entries/:id', (req, res) => {
   entriesCtrl.update(req, res);
+});
+
+// Delete an Entry by id
+router.delete('/entries/:id', (req, res) => {
+  entriesCtrl.delete(req, res);
 });
 
 export default router;

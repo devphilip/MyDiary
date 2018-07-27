@@ -40,4 +40,17 @@ entriesCtrl.update = (req, res) => {
   res.send(entryId);
 };
 
+entriesCtrl.delete = (req, res) => {
+  const entryId = entriesDB.find(e => e.id === parseInt(req.params.id));
+
+  if (!entryId) {
+      return res.status(404).send("The Diary entry with the given ID was not found.")
+  };
+
+  const index = entriesDB.indexOf(entryId);
+    entriesDB.splice(index, 1);
+
+  res.send(entryId);
+};
+
 export default entriesCtrl;
